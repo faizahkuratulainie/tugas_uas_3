@@ -1,0 +1,118 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-warning">
+        <div class="container-fluid">
+          <a class="navbar-brand ps-5" href="">Shopping</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 ps-5 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/shopingyuk">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="/shopingkuy">about</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    {% block content %}
+    {% endblock  %}
+      <!-- Footer -->
+            <!-- footer -->
+            <footer class="bg-warning">
+              <div class="container">
+                <div class="row">
+                  <div class="col-xl-3 col-lg-4 col-md-6">
+                    <div>
+                      <h3>Logo</h3>
+                      <p class="mb-30 footer-desc">Bismillah Berproses</p>
+                    </div>
+                  </div>
+                  <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+                    <div class="">
+                      <h4>Tautan Cepat</h4>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" class="text-decoration-none">Home</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-decoration-none">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-decoration-none">Service</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div>
+                      <h4>Melayani</h4>
+                      <ul class="list-unstyled">
+                        <li>
+                          <a href="#" class="text-decoration-none">Marketing</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-decoration-none">Branding</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-decoration-none">Web Design</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text-decoration-none">Graphics Design</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6">
+                    <div>
+                      <h4>Alamat</h4>
+                      <ul class="list-unstyled">
+                        <li>
+                          <p>283131133537</p>
+                        </li>
+                        <li>
+                          <p><a href="#">Shopping@gmail.com</a>
+                          </p>
+                        </li>
+                        <li>
+                          <p>Pamekasan
+                           Pamekasan, East Java, Indonesia</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-center">
+            
+                  <div class="copyright">
+                    <p>Developed and maintained by <a href="#" target="_blank">Shopping</a></p>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- EndFooter -->
+      <!-- EndFooter -->
+</body>
+</html>
