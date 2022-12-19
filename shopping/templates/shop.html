@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+
+{% block content %}
+ <h1 class="text-center">HALAMAN SHOPPING</h1>
+ <div class="container">
+  <div class="row">
+    {% for shop in shop %}
+    <div class="col-3 mb-4">
+      <div class="card" style="width: 16rem; height: 13rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">{{ shop.name }}</h5>
+          <p class="card-text" style="font-size: 12px;">{{ shop.diskripsi }}</p>
+          <p class="card-title bg-warning rounded ps-1" style="width: 80px;">{{ shop.harga }} K</p>
+          <a href="#" class="btn btn-primary">Chack Out</a>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<div class="container text-center mb-4">
+<a href="{% url 'update' %}" class="btn btn-primary">Tambah data</a>
+</div>
+{% endblock  %}
